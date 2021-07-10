@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+
+
+
+</div>
+<script>
+
+
+
+toCamelCase = function toCamelCase(str){
+    return str.replace(/[^a-zA-Z0-9]+(.)/g, function(match, chr)
+       {
+            return chr.toUpperCase();
+        });
+   
+    }
+    function toCamelCase1(str){
+      var regExp=/[-_]\w/ig;
+      return str.replace(regExp,function(match){
+            return match.charAt(1).toUpperCase();
+       });
+}
+    console.log(toCamelCase('the=stealth=warrior'))
+</script>
+</body>
+</html>
